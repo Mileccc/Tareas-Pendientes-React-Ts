@@ -1,0 +1,180 @@
+/* Establece las variables CSS personalizadas */
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; /* Define la fuente principal */
+    line-height: 1.5; /* Establece la altura de línea */
+    font-weight: 400; /* Establece el peso de la fuente */
+  
+    color-scheme: light dark; /* Habilita el esquema de colores claro y oscuro */
+    color: rgba(255, 255, 255, 0.87); /* Establece el color de texto */
+    background-color: #242424; /* Establece el color de fondo */
+  
+    font-synthesis: none; /* Desactiva la síntesis de fuentes */
+    text-rendering: optimizeLegibility; /* Optimiza la legibilidad del texto */
+    -webkit-font-smoothing: antialiased; /* Suaviza el texto en navegadores webkit */
+    -moz-osx-font-smoothing: grayscale; /* Suaviza el texto en macOS */
+    -webkit-text-size-adjust: 100%; /* Ajusta el tamaño del texto en navegadores webkit */
+  }
+  
+  /* Estilo para los enlaces */
+  a {
+    font-weight: 500; /* Establece el peso de la fuente para los enlaces */
+    color: #646cff; /* Establece el color de los enlaces */
+    text-decoration: inherit; /* Hereda la decoración de texto predeterminada */
+  }
+  
+  /* Estilo cuando se pasa el mouse sobre los enlaces */
+  a:hover {
+    color: #535bf2; /* Cambia el color al pasar el mouse sobre los enlaces */
+  }
+  
+  /* Estilo global para el cuerpo del documento */
+  body {
+    margin: 0; /* Elimina el margen predeterminado */
+    display: flex; /* Utiliza el modelo de caja flexible para el diseño */
+    min-width: 320px; /* Establece el ancho mínimo */
+    min-height: 100vh; /* Establece la altura mínima al 100% de la ventana */
+    flex-direction: row; /* Establece la dirección de los elementos flexibles */
+    flex-wrap: nowrap; /* Evita el desbordamiento de contenido en flexbox */
+    align-content: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+  }
+  
+  /* Estilo para los encabezados de nivel 1 */
+  h1 {
+    font-size: 3.2em; /* Establece el tamaño de fuente para h1 */
+    line-height: 1.1; /* Establece la altura de línea para h1 */
+  }
+  
+  /* Estilo para los botones */
+  button {
+    margin: 0 30px; /* Establece el margen horizontal */
+    border-radius: 8px; /* Establece el radio de borde */
+    border: 1px solid transparent; /* Establece el borde con transparencia */
+    padding: 0.6em 1.2em; /* Establece el relleno interno */
+    font-size: 1em; /* Establece el tamaño de fuente */
+    font-weight: 500; /* Establece el peso de la fuente */
+    font-family: inherit; /* Utiliza la fuente heredada */
+    background-color: #1a1a1a; /* Establece el color de fondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: border-color 0.25s; /* Agrega una transición al color del borde */
+  }
+  
+  /* Estilo cuando se pasa el mouse sobre los botones */
+  button:hover {
+    border-color: #646cff; /* Cambia el color del borde al pasar el mouse */
+  }
+  
+  /* Estilo cuando el botón tiene el enfoque */
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color; /* Establece un contorno al botón enfocado */
+  }
+  
+  /* Estilo alternativo para el cuerpo en modo claro (no utilizado en el código) */
+  /* @media (prefers-color-scheme: light) {
+      :root {
+        color: #213547;
+        background-color: #ffffff;
+      }
+    
+      a:hover {
+        color: #747bff;
+      }
+    
+      button {
+        background-color: #f9f9f9;
+      }
+    }
+     */
+  
+  /* Estilos adicionales para el cuerpo */
+  body {
+    font-family: Arial, sans-serif; /* Cambia la fuente principal */
+    line-height: 1.6; /* Establece la altura de línea */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+  }
+  
+  /* Estilos para el contenedor principal */
+  .container {
+    max-width: 400px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Establece el relleno interno del contenedor */
+  }
+  
+  /* Estilos para el encabezado de nivel 1 dentro del contenedor */
+  h1 {
+    text-align: center; /* Centra el texto del encabezado */
+    margin-bottom: 20px; /* Establece un margen inferior */
+  }
+  
+  /* Estilos para los campos de entrada de texto */
+  input[type="text"] {
+    width: 100%; /* Establece el ancho al 100% */
+    padding: 10px; /* Establece el relleno interno */
+    font-size: 16px; /* Establece el tamaño de fuente */
+    margin-bottom: 10px; /* Establece un margen inferior */
+  }
+  
+  /* Estilos para el contenedor flexible */
+  .flex {
+    min-width: 600px; /* Establece el ancho mínimo */
+    display: flex; /* Utiliza el modelo de caja flexible para el diseño */
+    flex-direction: column; /* Establece la dirección de los elementos flexibles */
+    flex-wrap: nowrap; /* Evita el desbordamiento de contenido en flexbox */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+  }
+  
+  /* Estilos para las tareas */
+  .task {
+    display: flex; /* Utiliza el modelo de caja flexible para las tareas */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    padding: 10px; /* Establece el relleno interno */
+    border: 1px solid #ccc; /* Establece un borde con color */
+    margin-bottom: 10px; /* Establece un margen inferior */
+    background-color: #f9f9f9; /* Establece el color de fondo */
+    color: black; /* Establece el color de texto */
+  }
+  
+  /* Estilos para los botones dentro de las tareas */
+  .task button {
+    background-color: #dc3545; /* Establece el color de fondo del botón */
+  }
+  
+  /* Estilos al pasar el mouse sobre los botones dentro de las tareas */
+  .task button:hover {
+    background-color: #c82333; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  /* Estilos para el contenido de la lista de tareas */
+  .task span {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenido de la tarea */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+  
+  /* Estilos para la lista de tareas */
+  .taskList {
+    min-width: 25vw; /* Establece el ancho mínimo de la lista de tareas */
+    margin: 30px; /* Establece un margen exterior */
+  }
+  
+  /* Estilos para el contenedor de la aplicación */
+  .app-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Establece el relleno interno */
+  }
+  
+  /* Estilos para el encabezado de nivel 1 en el contenedor de la aplicación */
+  h1 {
+    margin-bottom: 20px; /* Establece un margen inferior */
+  }
+  
+  /* Estilos para los campos de entrada de texto en el contenedor de la aplicación */
+  input[type="text"] {
+    width: 100%; /* Establece el ancho al 100% */
+    padding: 10px; /* Establece el relleno interno */
+    font-size: 16px; /* Establece el tamaño de fuente */
+    margin-bottom: 10px; /* Establece un margen inferior */
+  }
+  
